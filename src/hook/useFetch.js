@@ -11,7 +11,7 @@ export const useFetch = (url) => {
 
     useEffect(() => {
         getFetch();
-
+        
     }, [url]);
 
     const setLoadingSate = () => {
@@ -60,5 +60,7 @@ export const useFetch = (url) => {
         data: state.data,
         isLoading: state.isLoading,
         hasError: state.hasError
+        
     }
+    
 }
